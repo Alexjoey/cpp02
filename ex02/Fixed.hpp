@@ -33,6 +33,28 @@ public:
 	int		toInt(void) const;
 
 	Fixed&	operator= (const Fixed& Fixed);
+
+	bool	operator> (const Fixed& Fixed) const;
+	bool	operator>= (const Fixed& Fixed) const;
+	bool	operator< (const Fixed& Fixed) const;
+	bool	operator<= (const Fixed& Fixed) const;
+	bool	operator== (const Fixed& Fixed) const;
+	bool	operator!= (const Fixed& Fixed) const;
+	Fixed	operator+ (const Fixed& Fixed) const;
+	Fixed	operator- (const Fixed& Fixed) const;
+	Fixed	operator* (const Fixed& Fixed) const;
+	Fixed	operator/ (const Fixed& Fixed) const;
+
+	Fixed&	operator++();
+	Fixed&	operator--();
+	Fixed	operator++(int);
+	Fixed	operator--(int);
+
+	static Fixed&	min(Fixed& first, Fixed& second);
+	static Fixed&	max(Fixed& first, Fixed& second);
+	static const Fixed&	min(const Fixed& first, const Fixed& second);
+	static const Fixed&	max(const Fixed& first, const Fixed& second);
+
 	int		getRawBits(void) const;
 	void	setRawBits(int const raw);
 
