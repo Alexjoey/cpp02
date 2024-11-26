@@ -47,4 +47,10 @@ std::cout << "d is " << d.toInt() << " as integer" << std::endl;}
 	std::cout << "a - b is: " << a - b << std::endl;
 	std::cout << "a * b is: " << a * b << std::endl;
 	std::cout << "a / b is: " << a / b << std::endl;
+
+	Fixed c(2);
+	Fixed d(5);
+
+	std::cout << "c / d = " << c / d << std::endl;
+	std::cout << "c * d = " << c * d << std::endl;
 }
